@@ -24,7 +24,7 @@ public class Producer implements Runnable {
 				System.out.println("PRODUCTOR: he añadido un producto a la lista. Fin de la sección crítica, liberamos el monitor");
 			};
 		} catch (Exception e) {
-			
+			Thread.currentThread().interrupt();
 		}
 		
 	}

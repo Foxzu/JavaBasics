@@ -27,7 +27,7 @@ public class Consumer implements Runnable {
 				System.out.println("CONSUMIDOR: fin de la sección crítica, liberamos el monitor");
 			}
 		} catch (Exception e) {
-			
+			Thread.currentThread().interrupt();
 		}
 		
 		
