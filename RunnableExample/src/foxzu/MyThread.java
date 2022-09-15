@@ -1,6 +1,8 @@
 package foxzu;
 
 public class MyThread implements Runnable {
+	
+	@Override
 	public void run() {
 		String threadName = Thread.currentThread().getName();
 		
